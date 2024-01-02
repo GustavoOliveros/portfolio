@@ -6,7 +6,21 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'lime' : "#EBFEE9",
+        'sand': "#EEEADD",
+        'summer': "#F0AF04"
+      },
+      animation: {
+        'gradient': 'gradient 8s linear infinite',
+      },
+      keyframes: {
+        'gradient': {
+          to: { 'background-position': '200% center' },
+        }
+      },                   
+    },
   },
   plugins: [],
 }
