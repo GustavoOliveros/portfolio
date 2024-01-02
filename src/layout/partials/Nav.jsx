@@ -8,31 +8,30 @@ export default function Nav() {
 
     return (
         <div
-            className={`fixed w-full top-0 z-50 bg-lime transition-all duration-500 ${
-                isOnTop ? "bg-lime" : "bg-white"
+            className={`fixed w-full top-0 z-50 transition-all duration-500 flex justify-between px-3 md:justify-center md:flex-col  md:px-0 ${
+                isOnTop ? "" : "bg-white"
             }`}
         >
-            <nav className="max-w-7xl mx-auto flex justify-between py-4">
-                <Logo />
-                <ul className="flex gap-8 items-center">
+            <div className="text-center pt-6 pb-2 text-2xl">GMOL</div>
+            <nav className="max-w-7xl mx-auto justify-center pb-8 hidden md:flex">
+                    <ul className="flex gap-8 items-center">
                     <li>
-                        <NavLink>Inicio</NavLink>
+                        <NavLink to="/">Inicio</NavLink>
                     </li>
                     <li>
-                        <NavLink>Acerca de mí</NavLink>
+                        <NavLink to="/about">Acerca de mí</NavLink>
                     </li>
                     <li>
-                        <NavLink>Proyectos</NavLink>
+                        <NavLink to="/works">Proyectos</NavLink>
                     </li>
                     <li>
-                        <a
-                            href="#"
-                            className="bg-summer rounded-full px-6 py-3 hover:bg-yellow-400"
-                        >
-                            Contactar
-                        </a>
+                        <NavLink to="/contact">Contacto</NavLink> 
                     </li>
                 </ul>
+            </nav>
+
+            <nav className="flex md:hidden pt-6 pb-2">
+                <button>Menú</button>
             </nav>
         </div>
     );

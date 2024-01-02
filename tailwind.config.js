@@ -10,7 +10,8 @@ export default {
       colors:{
         'lime' : "#EBFEE9",
         'sand': "#EEEADD",
-        'summer': "#F0AF04"
+        'summer': "#F0AF04",
+        'skyblue': "#DDECEE"
       },
       animation: {
         'gradient': 'gradient 8s linear infinite',

@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@badrap/bar-of-progress": "^0.2.2",
     "@react-md/icon": "^5.1.6",
     "@react-md/material-icons": "^5.1.6",
     "@react-three/drei": "^9.92.7",

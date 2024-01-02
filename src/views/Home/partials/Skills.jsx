@@ -22,8 +22,8 @@ export default function Skills() {
 
     return (
         <>
-            <h1 className="text-6xl font-bold text-center">Cualidades</h1>
-            <div className="grid grid-cols-3 gap-5 text-3xl font-bold">
+            <h1 className="text-4xl font-bold text-center">Cualidades</h1>
+            <div className="grid grid-cols-3 gap-5 text-xl font-bold">
                 <div className="col-span-2 w-full bg-lime rounded-lg p-10 mt-10">
                     Nivel de inglés
                 </div>

@@ -1,32 +1,33 @@
 import Logo from "@/components/Logo";
 import Layout from "../../layout/Layout";
-import Test from "../../components/Box";
 import {
     ArrowDownwardSVGIcon,
     ArrowBackSVGIcon,
 } from "@react-md/material-icons";
 import Skills from "./partials/Skills";
 import Projects from "./partials/Projects";
+import CanvasObj from "../../components/Model";
+import { useLocation } from "react-router-dom";
 
 export default function Home() {
     return (
-        <Layout>
-            <div className="h-[100vh] bg-lime">
-                <section className="grid grid-cols-2 justify-between max-w-7xl mx-auto relative h-full">
-                    <div className="flex justify-center flex-col">
-                        <h1 className="text-7xl font-bold pb-1 bg-[linear-gradient(to_right,#07CB4A,#F0AF04,#07CB4A,#F0AF04,#07CB4A,#F0AF04,#07CB4A)] animate-gradient bg-clip-text bg-[length:200%_auto] text-transparent">
+        <>
+            <div className="h-[100vh] w-full bg-lime">
+                <section className="flex flex-col-reverse  lg:grid lg:grid-cols-2 justify-center lg:justify-between max-w-7xl mx-auto relative h-full">
+                    <div className="flex justify-center flex-col mx-3 lg:ms-20 text-center lg:text-start">
+                        <h1 className=" text-4xl lg:text-5xl  font-bold pb-1 bg-[linear-gradient(to_right,#07CB4A,#F0AF04,#07CB4A,#F0AF04,#07CB4A,#F0AF04,#07CB4A)] animate-gradient bg-clip-text bg-[length:200%_auto] text-transparent">
                             Gustavo Oliveros
                         </h1>
-                        <h2 className="pb-5 text-xl">
+                        <h2 className="pb-5 text-sm lg:text-xl ">
                             Técnico Universitario en Desarrollo Web
                         </h2>
-                        <p className="w-[60ch]">
+                        <p className="max-w-[60ch] mx-auto">
                             Con bases full stack, estoy dispuesto a aprender y a
                             avanzar como profesional en el área, siendo recién
                             egresado de la Universidad Nacional del Comahue en
                             Neuquén, Argentina.
                         </p>
-                        <ul className="flex gap-5 mt-3">
+                        <ul className="flex gap-5 mt-3 justify-center lg:justify-start">
                             <li>
                                 <a href="#" title="Github">
                                     {" "}
@@ -64,14 +65,12 @@ export default function Home() {
                         </ul>
                     </div>
 
-                    <div>{/* <Test /> */}</div>
-                    <div className="rounded-full bg-sand mx-auto absolute bottom-10 left-[50%] animate-bounce p-4">
-                        <ArrowDownwardSVGIcon className="w-8 h-8 text-black" />
-                    </div>
+                    <div className="h-[30vh] lg:h-auto"><CanvasObj /></div>
+                    
                 </section>
             </div>
 
-            <div className="bg-sand">
+            {/* <div className="bg-sand">
                 <section className="max-w-7xl mx-auto py-28">
                     <Skills />
                 </section>
@@ -89,7 +88,7 @@ export default function Home() {
 
             <div className="bg-lime">
                 <section className="max-w-7xl mx-auto py-28">Contacto</section>
-            </div>
-        </Layout>
+            </div> */}
+        </>
     );
 }
