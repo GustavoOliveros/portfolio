@@ -1,13 +1,3 @@
-import Logo from "@/components/Logo";
-import Layout from "../../layout/Layout";
-import {
-    ArrowDownwardSVGIcon,
-    ArrowBackSVGIcon,
-} from "@react-md/material-icons";
-import Skills from "./partials/Skills";
-import Projects from "./partials/Projects";
-import CanvasObj from "../../components/Model";
-import { useLocation } from "react-router-dom";
 import useOnTop from "../../hooks/useOnTop";
 
 export default function Home() {
@@ -79,7 +69,7 @@ export default function Home() {
                     </div>
 
                     <a
-                        className={`rounded-full w-12 h-12 bg-storm scroll-mt-10 flex justify-center items-center absolute bottom-10 animate-bounce transition-all duration-200 ${
+                        className={`rounded-full w-12 h-12 bg-storm hover:bg-white scroll-mt-10 flex justify-center items-center absolute bottom-10 animate-bounce transition-all duration-200 ${
                             !onTop ? "opacity-0 cursor-default" : null
                         } `}
                         href="#tech"
@@ -167,7 +157,55 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="bg-summer py-20"></div>
+            <div className="bg-summer py-10 w-full">
+                <h1 className=" w-full text-7xl flex  tracking-[1rem] mb-1     pt-4 ">
+                    <span className="bg-purple my-auto  w-full h-[1px]"></span>
+                    <span className="ps-4 text-purple">PROYECTOS</span>
+                    <span className="bg-purple my-auto  w-full h-[1px]"></span>
+                </h1>
+            </div>
+
+            <div
+                className="w-full bg-purple"
+                
+            >
+                <div className="bg-gray-700">
+                    <div className="grid grid-cols-3 w-full max-w-7xl mx-auto ">
+                        <div
+                            className="col-span-2 h-80 bg-center flex items-end text-white text-2xl ps-5 pb-5 w-full bg-gray-800"
+                            
+                        >
+                            <span className="">KITE</span>
+                            <span className="w-full h-[1px] bg-white mb-2"></span>
+                        </div>
+                        <div
+                            className="h-80 bg-center flex items-end text-white text-2xl ps-5 pb-5 w-full bg-black"
+                            
+                        >
+                            <span className="">NEUPOOM</span>
+                            <span className="w-full h-[1px] bg-white mb-2"></span>
+                        </div>
+                        <div
+                            className="h-80 bg-center flex items-end text-white text-2xl ps-5 pb-5 w-full bg-zinc-900"
+                            
+                        >
+                            <span className="">SLASH</span>
+                            <span className="w-full h-[1px] bg-white mb-2"></span>
+                        </div>
+                        <div
+                            className="col-span-2 h-80 bg-center flex items-end text-white text-2xl ps-5 pb-5 w-full bg-zinc-800"
+                            
+                        >
+                            <span className="">PORTFOLIO</span>
+                            <span className="w-full h-[1px] bg-white mb-2"></span>
+                        </div>
+                        <div className="col-span-3 flex tracking-wider text-3xl pt-4 pb-2 px-4 w-full bg-white text-end text-purple">
+                            <div className="w-full h-[1px] bg-purple my-auto"></div>
+                            <h1 className=" text-purple w-[12ch]">VER MÁS...</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             {/* <div className="bg-sand">
                 <section className="max-w-7xl mx-auto py-28">

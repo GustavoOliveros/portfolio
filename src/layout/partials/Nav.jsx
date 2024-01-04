@@ -1,6 +1,4 @@
-import Logo from "@/components/Logo";
 import useOnTop from "@/hooks/useOnTop";
-import { useState } from "react";
 import NavLink from "../../components/NavLink";
 
 export default function Nav() {
@@ -8,10 +6,10 @@ export default function Nav() {
 
     return (
         <div
-            className={`fixed w-full top-0 z-50 transition-all duration-500 flex justify-between px-3 md:justify-center md:flex-col  md:px-0 `}
+            className={`fixed w-full top-0 z-50 flex justify-between px-3 md:justify-center md:flex-col  md:px-0 `}
         >
-            <nav className={`max-w-7xl mx-auto justify-center py-2 px-10 rounded-full mb-8 mt-8 hidden md:flex bg-white/25 ${
-                isOnTop ? "" : "backdrop-blur-xl backdrop-brightness-50"
+            <nav className={`max-w-7xl mx-auto justify-center transition-all duration-200  py-2 px-4 rounded-full mb-8 mt-8 hidden md:flex backdrop-blur-xl   ${
+                isOnTop ? "bg-transparent" : " bg-black/75 shadow"
             }`}>
                     <ul className="flex gap-8 items-center">
                     <li>

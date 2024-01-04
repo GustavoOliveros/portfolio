@@ -1,4 +1,3 @@
-import ProgressBar from "@badrap/bar-of-progress";
 
 export default function Contact() {
     return (

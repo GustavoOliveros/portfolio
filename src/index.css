@@ -27,4 +27,8 @@
     section svg{
       color: theme('colors.storm')
     }
+
+    li svg:hover{
+      fill: white;
+    }
   }
