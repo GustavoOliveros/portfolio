@@ -16,7 +16,7 @@ export default function NavLink({ to, className = "", children, ...props }) {
         <Link
             to={to}
             className={
-                `relative ${isActive ? "font-bold " : null} ` + className
+                `relative ${isActive ? " " : null} ` + className
             }
             {...props}
             onMouseEnter={() => setIsHovered(true)}
