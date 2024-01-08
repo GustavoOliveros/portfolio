@@ -115,6 +115,7 @@ export default function Home() {
                                 </div>
                             )
                         )}
+                        <li className=" text-lg">Aprendiendo: React Native</li>
                     </ul>
                 </div>
                 <div className="w-full md:ps-20">
@@ -134,6 +135,7 @@ export default function Home() {
                                 </div>
                             )
                         )}
+                        <li className=" text-lg">Aprendiendo: ...</li>
                     </ul>
                 </div>
             </div>
@@ -145,7 +147,9 @@ export default function Home() {
                     <span className="bg-purple my-auto  w-full h-[1px]"></span>
                 </h1>
             </div> */}
-            <h1 className="tracking-[1rem] text-xl md:text-7xl   text-center mb-10 mt-28">PROYECTOS</h1>
+            <h1 className="tracking-[1rem] text-xl md:text-7xl   text-center mb-10 mt-28">
+                PROYECTOS
+            </h1>
 
             <div className="w-full mb-48">
                 <div className="">
@@ -154,26 +158,36 @@ export default function Home() {
                             <a
                                 href="#"
                                 key={index}
-                                className={`h-80 bg-center flex flex-col justify-end text-white px-5 pb-5 w-full border-transparent hover:border-white border-4 transition-all duration-300 rounded-lg bg-${
-                                    element.color
-                                }  ${
+                                className={`w-full ${
                                     index === 0 || index === 3
                                         ? "col-span-2"
-                                        : null
+                                        : ""
                                 }`}
                             >
-                                <div className="w-full flex items-end">
-                                    <span className=" text-2xl ">
-                                        {element.name}
-                                    </span>
-                                    <span className="w-full h-[1px] bg-white mb-2"></span>
-                                </div>
-                                <p className="w-full max-w-[60ch]">
-                                    {element.short_description}
-                                </p>
-                                <div className="space-x-2 mt-4">
-                                    {element.technologies.join(' - ')}
-                                </div>
+                                <article
+                                    className={`relative  h-80 flex flex-col justify-between text-white px-5 pb-5 w-full border-transparent hover:border-white border-4 transition-all duration-300 rounded-lg bg-gray-900  `}
+                                >
+                                    <img
+                                        src={element?.image}
+                                        alt=""
+                                        className="my-auto w-28 brightness-0 invert-[1]"
+                                    />
+
+                                    <div>
+                                        <div className="w-full flex items-end">
+                                            <span className=" text-2xl ">
+                                                {element.name}
+                                            </span>
+                                            <span className="w-full h-[1px] bg-white mb-2"></span>
+                                        </div>
+                                        <p className="w-full max-w-[60ch]">
+                                            {element.short_description}
+                                        </p>
+                                        <div className="space-x-2 mt-4">
+                                            {element.technologies.join(" - ")}
+                                        </div>
+                                    </div>
+                                </article>
                             </a>
                         ))}
                     </div>

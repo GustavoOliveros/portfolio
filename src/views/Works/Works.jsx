@@ -1,6 +1,6 @@
 export default function Works() {
     return (
-        <div className="bg-lime">
+        <div className="bg-turq">
             <section className="max-w-7xl mx-auto pb-28 pt-36">
             <h1 className="text-3xl font-bold pb-5">Proyectos</h1>
                 <article className="grid grid-cols-2 mb-10">

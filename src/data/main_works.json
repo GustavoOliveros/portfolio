@@ -5,7 +5,8 @@
         "technologies": [
             "React", "Laravel", "InertiaJS", "MySQL", "Tailwind"
         ],
-        "color" : "gray-800"
+        "color" : "bg-gray-800",
+        "image" : "https://github.com/GustavoOliveros/kite-app/blob/origin/public/img/logo.png?raw=true"
     },
     {
         "name": "Neupoom",
@@ -13,15 +14,17 @@
         "technologies": [
             "Laravel", "MySQL", "Bootstrap"
         ],
-        "color" : "gray-900"
+        "color" : "bg-gray-900",
+        "image" : "https://github.com/MarCoass/TPO-PWA/blob/main/TP-Laravel/public/images/World_Taekwondo2.png?raw=true"
     },
     {
         "name": "Slash",
-        "short_description": "E-commerce sobre artículos de tipo Gaming.",
+        "short_description": "E-commerce sobre artículos Gaming.",
         "technologies": [
             "PHP Vanilla", "MySQL", "Bootstrap"
         ],
-        "color" : "zinc-800"
+        "color" : "bg-zinc-800",
+        "image" : "https://github.com/GustavoOliveros/Slash-14/blob/main/Vista/img/LOGO.png?raw=true"
     },
     {
         "name": "Portfolio",
@@ -29,6 +32,7 @@
         "technologies": [
             "React", "Tailwind"
         ],
-        "color" : "zinc-900"
+        "color" : "bg-zinc-900",
+        "image" : "/GUSTAVO OLIVEROS.png"
     }
 ]
