@@ -9,7 +9,7 @@ export default function Footer() {
                     <span className="w-5 h-5 rounded-full bg-purple"></span>
                 </div>
                 <div>
-                    <p className="text-center  text-purple font-bold tracking-widest text-xl mt-20">
+                    <p className="text-center  text-purple font-bold tracking-widest  mt-20">
                         DERECHOS RESERVADOS, {new Date().getFullYear()}.
                     </p>
                 </div>

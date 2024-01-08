@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Kite",
+        "short_description": "Aplicación web que combina el catálogo de los principales servicios de streaming en Argentina.",
+        "technologies": [
+            "React", "Laravel", "InertiaJS", "MySQL", "Tailwind"
+        ],
+        "color" : "gray-800"
+    },
+    {
+        "name": "Neupoom",
+        "short_description": "Gestión de competencias Taekwondo para la federación neuquina.",
+        "technologies": [
+            "Laravel", "MySQL", "Bootstrap"
+        ],
+        "color" : "gray-900"
+    },
+    {
+        "name": "Slash",
+        "short_description": "E-commerce sobre artículos de tipo Gaming.",
+        "technologies": [
+            "PHP Vanilla", "MySQL", "Bootstrap"
+        ],
+        "color" : "zinc-800"
+    },
+    {
+        "name": "Portfolio",
+        "short_description": "Primer portofolio como desarrollador web.",
+        "technologies": [
+            "React", "Tailwind"
+        ],
+        "color" : "zinc-900"
+    }
+]

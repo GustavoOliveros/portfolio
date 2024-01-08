@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&family=Space+Mono&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&family=Space+Mono&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,28 +6,30 @@
 
 @layer base {
     html {
-      font-family: "Space Mono", monospace;
-      overflow-y: scroll;
-      scroll-behavior: smooth;
+        font-family: "Space Mono", monospace;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
     }
     h1 {
-      font-family: 'League Spartan', sans-serif;
-      color: theme('colors.summer');
+        font-family: "League Spartan", sans-serif;
+        color: theme("colors.summer");
     }
 
-    p, h2, li{
-      color: theme('colors.storm')
+    p,
+    h2,
+    li {
+        color: theme("colors.storm");
     }
 
-    a{
-      color: theme('colors.white')
+    a {
+        color: theme("colors.white");
     }
 
-    section svg{
-      color: theme('colors.storm')
+    section svg {
+        color: theme("colors.storm");
     }
 
-    li svg:hover{
-      fill: white;
+    li svg:hover {
+        fill: white;
     }
-  }
+}

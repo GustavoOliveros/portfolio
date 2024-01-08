@@ -14,7 +14,7 @@ export default {
         'skyblue': "#DDECEE",
         'purple': "#130F40",
         "turq": "#0F3740",
-        "storm": "#93A3B6"
+        "storm": "#B6C6CD"
       },
       animation: {
         'gradient': 'gradient 8s linear infinite',
