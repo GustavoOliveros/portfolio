@@ -6,7 +6,7 @@ export default function NavLink({ to, className = "", isOnTop, children, ...prop
             to={to}
             className={
                 (({isActive}) => (
-                    `px-3 py-1 rounded-full  ${isActive ? 'bg-summer text-black' : 'hover:bg-storm/50'}`
+                    `px-3 py-2 rounded-full  ${isActive ? 'bg-summer text-black' : 'hover:bg-storm/50'}`
                 ))
             }
             {...props}

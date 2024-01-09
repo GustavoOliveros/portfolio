@@ -28,7 +28,7 @@
     },
     {
         "name": "Portfolio",
-        "short_description": "Primer portofolio como desarrollador web.",
+        "short_description": "Primer portfolio como web dev.",
         "technologies": [
             "React", "Tailwind"
         ],

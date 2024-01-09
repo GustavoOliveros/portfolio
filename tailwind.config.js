@@ -23,7 +23,13 @@ export default {
         'gradient': {
           to: { 'background-position': '200% center' },
         }
-      },                   
+      },
+      height:{
+        'line' : '1px',
+      },
+      letterSpacing: {
+        'heading' : '1rem'
+      }    
     },
   },
   plugins: [],

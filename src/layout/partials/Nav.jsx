@@ -6,11 +6,11 @@ export default function Nav() {
 
     return (
         <header
-            className={`fixed w-full top-0 z-50 flex justify-between px-3 md:justify-center md:flex-col  md:px-0 `}
+            className="fixed top-0 z-50 flex justify-between w-full px-3 md:flex-col md:justify-center md:px-0"
         >
             <nav
-                className={`max-w-7xl mx-auto justify-center transition-all duration-200  py-2 px-4 rounded-full mb-8 mt-8 hidden md:flex backdrop-blur-xl   ${
-                    isOnTop ? "bg-transparent" : " bg-black/75 shadow"
+                className={`hidden md:flex justify-center max-w-7xl mx-auto py-4 px-4 my-8 rounded-full backdrop-blur-xl transition-all duration-200 ${
+                    isOnTop ? "bg-transparent" : " bg-black/50 shadow"
                 }`}
             >
                 <ul className="flex gap-8 items-center">

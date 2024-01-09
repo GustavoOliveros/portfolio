@@ -32,4 +32,35 @@
     li svg:hover {
         fill: white;
     }
+
+    @keyframes test {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px)
+        }
+        70% {
+            opacity: 0;
+            transform: translateY(-10px)
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px)
+        }
+    }
+
+    .test {
+        animation: test .5s cubic-bezier(.175,.885,.32,1.275);
+    }
+
+    .test2 {
+        animation: test .5s cubic-bezier(.175,.885,.32,1.275);
+    }
+
+    .test3 {
+        animation: test 1s cubic-bezier(.175,.885,.32,1.275);
+    }
+
+    .test4{
+        animation: test 1.5s cubic-bezier(.175,.885,.32,1.275);
+    }
 }
