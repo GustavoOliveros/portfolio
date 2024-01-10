@@ -33,7 +33,7 @@
         fill: white;
     }
 
-    @keyframes test {
+    @keyframes fadeIn {
         0% {
             opacity: 0;
             transform: translateY(-10px)
@@ -47,20 +47,19 @@
             transform: translateY(0px)
         }
     }
-
-    .test {
-        animation: test .5s cubic-bezier(.175,.885,.32,1.275);
+    .fadeIn-0 {
+        animation: fadeIn .3s cubic-bezier(.175,.885,.32,1.275);
     }
 
-    .test2 {
-        animation: test .5s cubic-bezier(.175,.885,.32,1.275);
+    .fadeIn-1 {
+        animation: fadeIn .5s cubic-bezier(.175,.885,.32,1.275);
     }
 
-    .test3 {
-        animation: test 1s cubic-bezier(.175,.885,.32,1.275);
+    .fadeIn-2 {
+        animation: fadeIn 1s cubic-bezier(.175,.885,.32,1.275);
     }
 
-    .test4{
-        animation: test 1.5s cubic-bezier(.175,.885,.32,1.275);
+    .fadeIn-3 {
+        animation: fadeIn 1.5s cubic-bezier(.175,.885,.32,1.275);
     }
 }

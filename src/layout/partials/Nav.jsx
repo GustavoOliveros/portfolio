@@ -6,7 +6,7 @@ export default function Nav() {
 
     return (
         <header
-            className="sticky md:fixed top-4 md:top-0 z-50 flex justify-between w-full md:flex-col md:justify-center md:px-0"
+            className="sticky top-4 md:top-0 z-50 flex justify-between w-full md:flex-col md:justify-center md:px-0"
         >
             <nav
                 className={`flex justify-center py-2 max-w-7xl mx-auto md:py-2 md:px-1 md:my-8 rounded-full backdrop-blur-xl transition-all duration-200 ${

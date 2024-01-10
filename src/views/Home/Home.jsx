@@ -2,6 +2,7 @@ import MAIN_WORKS from "../../data/main_works.json";
 import GoToBottom from "../../components/GoToBottom";
 import { useRef } from "react";
 import { useIsFirstVisible } from "../../hooks/useIsFirstVisible";
+import LatestWorks from "../../components/LatestWorks";
 
 export default function Home() {
     const techRef = useRef();
@@ -11,29 +12,29 @@ export default function Home() {
 
     return (
         <>
-            <section className="flex flex-col md:justify-center items-center h-screen">
-                <div className="flex text-5xl mt-16 md:mt-0 md:text-7xl pt-4 md:mb-1 tracking-[.5rem] md:tracking-heading w-full test">
+            <section className="flex flex-col  items-center h-screen">
+                <div className="flex text-5xl mt-16 md:mt-10 md:text-7xl pt-4 md:mb-1 tracking-[.5rem] md:tracking-heading w-full fadeIn-1">
                     <span className="h-line bg-storm my-auto w-full" />
                     <h1 className="ps-2 md:ps-4">GUSTAVO</h1>
                     <span className="h-line bg-storm my-auto w-full" />
                 </div>
-                <div className="flex text-5xl md:text-7xl md:mb-1 pt-4 tracking-[.5rem] md:tracking-heading w-full test">
+                <div className="flex text-5xl md:text-7xl md:mb-1 pt-4 tracking-[.5rem] md:tracking-heading w-full fadeIn-1">
                     <span className="h-line bg-storm my-auto w-full" />
                     <h1 className="ps-2 md:ps-4">OLIVEROS</h1>
                     <span className="h-line bg-storm my-auto w-full" />
                 </div>
 
-                <h2 className="text-sm lg:text-xl pb-5 test2 text-center px-3">
+                <h2 className="text-sm lg:text-xl pb-5 fadeIn-2 text-center px-3">
                     Técnico Universitario en Desarrollo Web
                 </h2>
 
-                <p className="max-w-[60ch] mx-auto text-center text-sm lg:text-lg test2 px-3">
+                <p className="max-w-[60ch] mx-auto text-center text-sm lg:text-lg fadeIn-2 px-3">
                     Con muchas ganas de aprender y avanzar como profesional en
                     el área, siendo recién egresado de la Universidad Nacional
                     del Comahue en Neuquén, Argentina.
                 </p>
 
-                <ul className="flex justify-center gap-5 mt-10 test3">
+                <ul className="flex justify-center gap-5 mt-10 fadeIn-3">
                     <li>
                         <a href="#" title="Github">
                             <svg
@@ -140,50 +141,8 @@ export default function Home() {
                     PROYEC&shy;TOS
                 </h1>
 
-                <div className="w-full md:mb-48 mb-20">
-                    <div
-                        className="flex flex-col md:grid grid-cols-3 gap-2 w-full max-w-7xl mx-auto "
-                        ref={worksRef}
-                    >
-                        {MAIN_WORKS.map((element, index) => (
-                            <a
-                                href="#"
-                                key={index}
-                                className={`w-full ${
-                                    index === 0 || index === 3
-                                        ? "col-span-2"
-                                        : ""
-                                }`}
-                            >
-                                <article
-                                    className={`md:h-80 relative flex flex-col justify-between text-white p-5 w-full border-transparent hover:border-white border-4  transition-all duration-300 rounded-lg bg-gray-900 hover:-translate-y-2   `}
-                                >
-                                    <header className="my-5 md:my-auto md:w-28 w-14 brightness-0 invert-[1]">
-                                        <img
-                                            src={element?.image}
-                                            loading="lazy"
-                                            aria-hidden
-                                        />
-                                    </header>
-
-                                    <div>
-                                        <div className="w-full flex items-end">
-                                            <span className=" text-2xl ">
-                                                {element.name}
-                                            </span>
-                                            <span className="w-full h-[1px] bg-white mb-2"></span>
-                                        </div>
-                                        <p className="w-full max-w-[60ch] text-sm md:line-clamp-2">
-                                            {element.short_description}
-                                        </p>
-                                        <div className="space-x-2 mt-4 text-sm md:line-clamp-1">
-                                            {element.technologies.join(" - ")}
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-                        ))}
-                    </div>
+                <div className="w-full md:mb-48 mb-20" ref={worksRef}>
+                    <LatestWorks />
                 </div>
             </section>
         </>

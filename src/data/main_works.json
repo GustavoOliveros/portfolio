@@ -1,5 +1,6 @@
 [
     {
+        "id": "kite", 
         "name": "Kite",
         "short_description": "Aplicación web que combina el catálogo de los principales servicios de streaming en Argentina.",
         "technologies": [
@@ -8,6 +9,7 @@
         "image" : "https://github.com/GustavoOliveros/kite-app/blob/origin/public/img/logo.png?raw=true"
     },
     {
+        "id": "neupoom", 
         "name": "Neupoom",
         "short_description": "Gestión de competencias Taekwondo para la federación neuquina.",
         "technologies": [
@@ -16,6 +18,7 @@
         "image" : "https://github.com/MarCoass/TPO-PWA/blob/main/TP-Laravel/public/images/World_Taekwondo2.png?raw=true"
     },
     {
+        "id": "slash", 
         "name": "Slash",
         "short_description": "E-commerce sobre artículos Gaming.",
         "technologies": [
@@ -24,6 +27,7 @@
         "image" : "https://github.com/GustavoOliveros/Slash-14/blob/main/Vista/img/LOGO.png?raw=true"
     },
     {
+        "id": "portfolio",
         "name": "Portfolio",
         "short_description": "[EN PROGRESO] - Primer portfolio como desarrollador web.",
         "technologies": [
