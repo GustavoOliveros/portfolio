@@ -8,8 +8,7 @@ import Contact from "../views/Contact/Contact";
 
 export const router = createBrowserRouter([
     {
-      path: "/",
-      
+      path: "/",      
       element: <Layout />,
       errorElement: <Errors />,
       children: [
@@ -31,4 +30,6 @@ export const router = createBrowserRouter([
         }
       ]
     },
-  ]);
+  ], {
+    basename: '/portfolio'
+  });

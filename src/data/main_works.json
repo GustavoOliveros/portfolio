@@ -5,7 +5,6 @@
         "technologies": [
             "React", "Laravel", "InertiaJS", "MySQL", "Tailwind"
         ],
-        "color" : "bg-gray-800",
         "image" : "https://github.com/GustavoOliveros/kite-app/blob/origin/public/img/logo.png?raw=true"
     },
     {
@@ -14,7 +13,6 @@
         "technologies": [
             "Laravel", "MySQL", "Bootstrap"
         ],
-        "color" : "bg-gray-900",
         "image" : "https://github.com/MarCoass/TPO-PWA/blob/main/TP-Laravel/public/images/World_Taekwondo2.png?raw=true"
     },
     {
@@ -23,16 +21,14 @@
         "technologies": [
             "PHP Vanilla", "MySQL", "Bootstrap"
         ],
-        "color" : "bg-zinc-800",
         "image" : "https://github.com/GustavoOliveros/Slash-14/blob/main/Vista/img/LOGO.png?raw=true"
     },
     {
         "name": "Portfolio",
-        "short_description": "Primer portfolio como web dev.",
+        "short_description": "[EN PROGRESO] - Primer portfolio como desarrollador web.",
         "technologies": [
             "React", "Tailwind"
         ],
-        "color" : "bg-zinc-900",
-        "image" : "/GUSTAVO OLIVEROS.png"
+        "image" : "/portfolio/GUSTAVO_OLIVEROS.png"
     }
 ]

@@ -8,7 +8,7 @@ export default function GoToBottom({ elementID }) {
     const onTop = useOnTop();
 
     return (
-        <div className="test4 absolute bottom-10">
+        <div className="test4 absolute bottom-5 md:bottom-10">
             <a
                 className={`rounded-full w-12 h-12 bg-storm hover:bg-white scroll-mt-10 flex justify-center items-center  animate-bounce transition-all duration-200 ${
                     !onTop ? "opacity-0 cursor-default" : null

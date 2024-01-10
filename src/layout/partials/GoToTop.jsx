@@ -5,7 +5,7 @@ export default function GoToTop() {
 
     return (
         <a
-            className={`rounded-full w-12 h-12 bg-storm hover:bg-white fixed bottom-10 flex justify-center items-center right-10 transition-all duration-200 ${
+            className={`rounded-full w-12 h-12 bg-storm hover:bg-white fixed bottom-4 md:bottom-10 flex justify-center items-center right-4 md:right-10 transition-all duration-200 ${
                 isOnTop ? "opacity-0 cursor-default" : null
             } `}
             href="#"

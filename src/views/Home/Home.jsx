@@ -1,34 +1,34 @@
 import MAIN_WORKS from "../../data/main_works.json";
 import GoToBottom from "../../components/GoToBottom";
 import { useRef } from "react";
-import { useIsVisible } from "../../hooks/useIsVisible";
+import { useIsFirstVisible } from "../../hooks/useIsFirstVisible";
 
 export default function Home() {
     const techRef = useRef();
     const worksRef = useRef();
-    const isTechVisible = useIsVisible(techRef);
-    const isWorksVisible = useIsVisible(worksRef);
+    const isTechVisible = useIsFirstVisible(techRef);
+    const isWorksVisible = useIsFirstVisible(worksRef);
 
     return (
         <>
-            <section className="flex flex-col justify-center items-center h-screen">
-                <div className="flex text-xl md:text-7xl pt-4 mb-1 tracking-heading w-full test">
+            <section className="flex flex-col md:justify-center items-center h-screen">
+                <div className="flex text-5xl mt-16 md:mt-0 md:text-7xl pt-4 md:mb-1 tracking-[.5rem] md:tracking-heading w-full test">
                     <span className="h-line bg-storm my-auto w-full" />
-                    <h1 className="ps-4">GUSTAVO</h1>
+                    <h1 className="ps-2 md:ps-4">GUSTAVO</h1>
                     <span className="h-line bg-storm my-auto w-full" />
                 </div>
-                <div className="flex text-xl md:text-7xl mb-1 pt-4 tracking-heading w-full test">
+                <div className="flex text-5xl md:text-7xl md:mb-1 pt-4 tracking-[.5rem] md:tracking-heading w-full test">
                     <span className="h-line bg-storm my-auto w-full" />
-                    <h1 className="ps-4">OLIVEROS</h1>
+                    <h1 className="ps-2 md:ps-4">OLIVEROS</h1>
                     <span className="h-line bg-storm my-auto w-full" />
                 </div>
 
-                <h2 className="text-sm lg:text-xl pb-5 test2">
+                <h2 className="text-sm lg:text-xl pb-5 test2 text-center px-3">
                     Técnico Universitario en Desarrollo Web
                 </h2>
 
-                <p className="max-w-[60ch] mx-auto text-center test2">
-                    Con muchas ganas de aprender y a avanzar como profesional en
+                <p className="max-w-[60ch] mx-auto text-center text-sm lg:text-lg test2 px-3">
+                    Con muchas ganas de aprender y avanzar como profesional en
                     el área, siendo recién egresado de la Universidad Nacional
                     del Comahue en Neuquén, Argentina.
                 </p>
@@ -79,70 +79,70 @@ export default function Home() {
             </section>
 
             <section
-                className={`grid grid-cols-2 w-full mx-auto mb-40 max-w-7xl scroll-mt-40 transition-all duration-300 ${
+                className={`md:grid grid-cols-2 w-full mx-auto md:mb-40 max-w-7xl scroll-mt-40 transition-all duration-300 px-4 md:px-6 xl:px-0 ${
                     isTechVisible
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 -translate-y-3"
                 }`}
                 id="tech"
             >
-                <div className="border-e border-storm w-full pe-20">
-                    <h1 className="text-xl md:text-7xl tracking-[1rem]">
+                <div className="md:border-e md:border-storm w-full md:pe-20 pb-20 md:pb-0">
+                    <h1 className="text-5xl md:text-7xl tracking-heading">
                         FRONT-
                         <br />
                         END
                     </h1>
 
-                    <div className="md:text-3xl w-full" ref={techRef}>
+                    <div className="md:text-3xl w-full space-y-5 md:space-y-10" ref={techRef}>
                         {["React", "HTML/JS/CSS", "Bootstrap", "Tailwind"].map(
                             (element, index) => (
                                 <div className="w-full flex" key={index}>
-                                    <h2 className="h-20 flex justify-center items-center">
+                                    <h2 className="flex justify-center items-center">
                                         {element}
                                     </h2>
-                                    <span className="w-full h-5 my-auto border-b-[1px] border-b-storm"></span>
+                                    <span className="w-full mb-2 h-5 md:my-auto border-b-[1px] border-b-storm"></span>
                                 </div>
                             )
                         )}
-                        <h2 className=" text-lg">Aprendiendo: React Native</h2>
+                        <h2 className=" md:text-lg">Aprendiendo: React Native</h2>
                     </div>
                 </div>
-                <div className="w-full md:ps-20">
-                    <h1 className="text-xl md:text-7xl tracking-[1rem]">
+                <div className="w-full lg:ps-20 md:ps-10">
+                    <h1 className="text-5xl md:text-7xl tracking-heading">
                         BACK-
                         <br />
                         END
                     </h1>
-                    <div className="md:text-3xl w-full">
-                        {["Laravel", "PHP", "MySQL", ""].map(
+                    <div className="md:text-3xl w-full space-y-5 md:space-y-10">
+                        {["Laravel", "PHP", "MySQL", "..."].map(
                             (element, index) => (
                                 <div className="w-full flex" key={index}>
-                                    <h2 className="h-20 flex justify-center items-center">
+                                    <h2 className="flex justify-center items-center">
                                         {element}
                                     </h2>
-                                    <span className="w-full h-5 my-auto border-b-[1px] border-b-storm"></span>
+                                    <span className="w-full h-5 mb-2 md:my-auto border-b-[1px] border-b-storm"></span>
                                 </div>
                             )
                         )}
-                        <h2 className=" text-lg">Aprendiendo: ...</h2>
+                        <h2 className="md:text-lg">Aprendiendo: ...</h2>
                     </div>
                 </div>
             </section>
 
             <section
-                className={`transition-all duration-300 ${
+                className={`transition-all duration-300 px-4 md:px-6 xl:px-0 ${
                     isWorksVisible
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 -translate-y-3"
                 }`}
             >
-                <h1 className="tracking-[1rem] text-xl md:text-7xl text-center mb-20 mt-28">
-                    PROYECTOS
+                <h1 className="tracking-[1rem] text-5xl md:text-7xl md:text-center mb-10 md:mb-20 mt-20 md:mt-28">
+                    PROYEC&shy;TOS
                 </h1>
 
-                <div className="w-full mb-48">
+                <div className="w-full md:mb-48 mb-20">
                     <div
-                        className="md:grid grid-cols-3 gap-3 w-full max-w-7xl mx-auto "
+                        className="flex flex-col md:grid grid-cols-3 gap-2 w-full max-w-7xl mx-auto "
                         ref={worksRef}
                     >
                         {MAIN_WORKS.map((element, index) => (
@@ -156,9 +156,9 @@ export default function Home() {
                                 }`}
                             >
                                 <article
-                                    className={`relative  h-80 flex flex-col justify-between text-white px-5 pb-5 w-full border-transparent hover:border-white border-4  transition-all duration-300 rounded-lg bg-gray-900 hover:-translate-y-2   `}
+                                    className={`md:h-80 relative flex flex-col justify-between text-white p-5 w-full border-transparent hover:border-white border-4  transition-all duration-300 rounded-lg bg-gray-900 hover:-translate-y-2   `}
                                 >
-                                    <header className="my-auto w-28 brightness-0 invert-[1]">
+                                    <header className="my-5 md:my-auto md:w-28 w-14 brightness-0 invert-[1]">
                                         <img
                                             src={element?.image}
                                             loading="lazy"
@@ -173,10 +173,10 @@ export default function Home() {
                                             </span>
                                             <span className="w-full h-[1px] bg-white mb-2"></span>
                                         </div>
-                                        <p className="w-full max-w-[60ch]">
+                                        <p className="w-full max-w-[60ch] text-sm md:line-clamp-2">
                                             {element.short_description}
                                         </p>
-                                        <div className="space-x-2 mt-4">
+                                        <div className="space-x-2 mt-4 text-sm md:line-clamp-1">
                                             {element.technologies.join(" - ")}
                                         </div>
                                     </div>
