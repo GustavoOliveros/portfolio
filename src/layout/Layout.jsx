@@ -7,7 +7,7 @@ import { ScrollRestoration } from 'react-router-dom';
 export default function Layout({}) {
     return (
         <>
-            <div className="bg-gradient-to-r from-purple to-turq">
+            <div className="bg-gradient-to-r from-purple to-turq ">
                 <Nav />
                 <main>
                     <Outlet />

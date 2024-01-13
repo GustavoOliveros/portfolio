@@ -48,7 +48,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <p className="mt-20  text-center font-bold tracking-widest text-purple">
+                    <p className="mb-10 mt-10 text-center font-bold tracking-widest text-purple">
                         DERECHOS RESERVADOS &copy;, {new Date().getFullYear()}.
                     </p>
                 </div>

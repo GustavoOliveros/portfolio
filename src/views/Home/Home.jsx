@@ -1,4 +1,3 @@
-import MAIN_WORKS from '../../data/main_works.json';
 import GoToBottom from '../../components/GoToBottom';
 import { useRef } from 'react';
 import { useIsFirstVisible } from '../../hooks/useIsFirstVisible';
@@ -7,6 +6,7 @@ import LatestWorks from '../../components/LatestWorks';
 export default function Home() {
     const techRef = useRef();
     const worksRef = useRef();
+    const titleTechRef = useRef();
     const isTechVisible = useIsFirstVisible(techRef);
     const isWorksVisible = useIsFirstVisible(worksRef);
 
@@ -76,16 +76,16 @@ export default function Home() {
                     </li>
                 </ul>
 
-                <GoToBottom elementID="tech" />
+                <GoToBottom toRef={titleTechRef} />
             </section>
 
             <section
-                className={`mx-auto w-full max-w-7xl scroll-mt-40 grid-cols-2 px-4 transition-all duration-300 md:mb-40 md:grid md:px-6 xl:px-0 ${
+                className={`mx-auto w-full max-w-7xl scroll-mt-20 grid-cols-2 px-4 transition-all duration-300 md:mb-40 md:grid md:scroll-mt-40 md:px-6 xl:px-0 ${
                     isTechVisible
                         ? 'translate-y-0 opacity-100'
                         : '-translate-y-3 opacity-0'
                 }`}
-                id="tech"
+                ref={titleTechRef}
             >
                 <div className="w-full pb-20 md:border-e md:border-storm md:pb-0 md:pe-20">
                     <h1 className="text-5xl tracking-heading md:text-7xl">
