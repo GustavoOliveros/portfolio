@@ -3,7 +3,6 @@
         "id": "kite",
         "name": "Kite",
         "short_description": "Aplicación web que combina el catálogo de los principales servicios de streaming en Argentina.",
-        "description": "",
         "technologies": ["React", "Laravel", "InertiaJS", "MySQL", "Tailwind"],
         "image": "https://github.com/GustavoOliveros/kite-app/blob/origin/public/img/logo.png?raw=true"
     },
@@ -11,7 +10,6 @@
         "id": "neupoom",
         "name": "Neupoom",
         "short_description": "Gestión de competencias Taekwondo para la federación neuquina.",
-        "description": "",
         "technologies": ["Laravel", "MySQL", "Bootstrap"],
         "image": "https://github.com/MarCoass/TPO-PWA/blob/main/TP-Laravel/public/images/World_Taekwondo2.png?raw=true"
     },
@@ -19,16 +17,14 @@
         "id": "slash",
         "name": "Slash",
         "short_description": "E-commerce sobre artículos Gaming.",
-        "description": "",
         "technologies": ["PHP Vanilla", "MySQL", "Bootstrap"],
         "image": "https://github.com/GustavoOliveros/Slash-14/blob/main/Vista/img/LOGO.png?raw=true"
     },
     {
-        "id": "cineguess",
-        "name": "CineGuess",
-        "description": "",
-        "short_description": "Quiz sobre películas para Android.",
-        "technologies": ["React Native", "Tailwind (twrnc)"],
+        "id": "portfolio",
+        "name": "Portfolio",
+        "short_description": "[EN PROGRESO] - Primer portfolio como desarrollador web.",
+        "technologies": ["React", "Tailwind"],
         "image": "/portfolio/GUSTAVO_OLIVEROS.png"
     }
 ]
