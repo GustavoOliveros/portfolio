@@ -1,4 +1,4 @@
-import useOnTop from "../hooks/useOnTop";
+import useOnTop from '../hooks/useOnTop';
 
 /**
  * Botón para ir a algún punto inferior del sitio
@@ -10,15 +10,15 @@ export default function GoToBottom({ elementID }) {
     return (
         <div className="test4 absolute bottom-5 md:bottom-10">
             <a
-                className={`rounded-full w-12 h-12 bg-storm hover:bg-white scroll-mt-10 flex justify-center items-center  animate-bounce transition-all duration-200 ${
-                    !onTop ? "opacity-0 cursor-default" : null
+                className={`flex h-12 w-12 animate-bounce scroll-mt-10 items-center justify-center rounded-full bg-storm  transition-all duration-200 hover:bg-white ${
+                    !onTop ? 'cursor-default opacity-0' : null
                 } `}
-                href={"#" + elementID}
+                href={'#' + elementID}
                 title="Ir hacia abajo"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-8 h-8"
+                    className="h-8 w-8"
                     viewBox="0 0 384 512"
                     fill="#130F40"
                 >

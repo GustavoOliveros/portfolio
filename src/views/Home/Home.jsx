@@ -1,8 +1,8 @@
-import MAIN_WORKS from "../../data/main_works.json";
-import GoToBottom from "../../components/GoToBottom";
-import { useRef } from "react";
-import { useIsFirstVisible } from "../../hooks/useIsFirstVisible";
-import LatestWorks from "../../components/LatestWorks";
+import MAIN_WORKS from '../../data/main_works.json';
+import GoToBottom from '../../components/GoToBottom';
+import { useRef } from 'react';
+import { useIsFirstVisible } from '../../hooks/useIsFirstVisible';
+import LatestWorks from '../../components/LatestWorks';
 
 export default function Home() {
     const techRef = useRef();
@@ -12,34 +12,34 @@ export default function Home() {
 
     return (
         <>
-            <section className="flex flex-col  items-center h-screen">
-                <div className="flex text-5xl mt-16 md:mt-10 md:text-7xl pt-4 md:mb-1 tracking-[.5rem] md:tracking-heading w-full fadeIn-1">
-                    <span className="h-line bg-storm my-auto w-full" />
+            <section className="flex h-screen flex-col items-center">
+                <div className="fadeIn-1 mt-16 flex w-full pt-4 text-5xl tracking-[.5rem] md:mb-1 md:mt-10 md:text-7xl md:tracking-heading">
+                    <span className="my-auto h-line w-full bg-storm" />
                     <h1 className="ps-2 md:ps-4">GUSTAVO</h1>
-                    <span className="h-line bg-storm my-auto w-full" />
+                    <span className="my-auto h-line w-full bg-storm" />
                 </div>
-                <div className="flex text-5xl md:text-7xl md:mb-1 pt-4 tracking-[.5rem] md:tracking-heading w-full fadeIn-1">
-                    <span className="h-line bg-storm my-auto w-full" />
+                <div className="fadeIn-1 flex w-full pt-4 text-5xl tracking-[.5rem] md:mb-1 md:text-7xl md:tracking-heading">
+                    <span className="my-auto h-line w-full bg-storm" />
                     <h1 className="ps-2 md:ps-4">OLIVEROS</h1>
-                    <span className="h-line bg-storm my-auto w-full" />
+                    <span className="my-auto h-line w-full bg-storm" />
                 </div>
 
-                <h2 className="text-sm lg:text-xl pb-5 fadeIn-2 text-center px-3">
+                <h2 className="fadeIn-2 px-3 pb-5 text-center text-sm lg:text-xl">
                     Técnico Universitario en Desarrollo Web
                 </h2>
 
-                <p className="max-w-[60ch] mx-auto text-center text-sm lg:text-lg fadeIn-2 px-3">
+                <p className="fadeIn-2 mx-auto max-w-[60ch] px-3 text-center text-sm lg:text-lg">
                     Con muchas ganas de aprender y avanzar como profesional en
                     el área, siendo recién egresado de la Universidad Nacional
                     del Comahue en Neuquén, Argentina.
                 </p>
 
-                <ul className="flex justify-center gap-5 mt-10 fadeIn-3">
+                <ul className="fadeIn-3 mt-10 flex justify-center gap-5">
                     <li>
                         <a href="#" title="Github">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="w-7 h-7"
+                                className="h-7 w-7"
                                 viewBox="0 0 496 512"
                                 fill="#93A3B6"
                             >
@@ -53,7 +53,7 @@ export default function Home() {
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 448 512"
-                                className="w-7 h-7"
+                                className="h-7 w-7"
                                 fill="#93A3B6"
                             >
                                 <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
@@ -65,7 +65,7 @@ export default function Home() {
                         <a href="#" title="Correo electrónico">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="w-7 h-7"
+                                className="h-7 w-7"
                                 viewBox="0 0 512 512"
                                 fill="#93A3B6"
                             >
@@ -80,48 +80,53 @@ export default function Home() {
             </section>
 
             <section
-                className={`md:grid grid-cols-2 w-full mx-auto md:mb-40 max-w-7xl scroll-mt-40 transition-all duration-300 px-4 md:px-6 xl:px-0 ${
+                className={`mx-auto w-full max-w-7xl scroll-mt-40 grid-cols-2 px-4 transition-all duration-300 md:mb-40 md:grid md:px-6 xl:px-0 ${
                     isTechVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 -translate-y-3"
+                        ? 'translate-y-0 opacity-100'
+                        : '-translate-y-3 opacity-0'
                 }`}
                 id="tech"
             >
-                <div className="md:border-e md:border-storm w-full md:pe-20 pb-20 md:pb-0">
-                    <h1 className="text-5xl md:text-7xl tracking-heading">
+                <div className="w-full pb-20 md:border-e md:border-storm md:pb-0 md:pe-20">
+                    <h1 className="text-5xl tracking-heading md:text-7xl">
                         FRONT-
                         <br />
                         END
                     </h1>
 
-                    <div className="md:text-3xl w-full space-y-5 md:space-y-10" ref={techRef}>
-                        {["React", "HTML/JS/CSS", "Bootstrap", "Tailwind"].map(
+                    <div
+                        className="w-full space-y-5 md:space-y-10 md:text-3xl"
+                        ref={techRef}
+                    >
+                        {['React', 'HTML/JS/CSS', 'Bootstrap', 'Tailwind'].map(
                             (element, index) => (
-                                <div className="w-full flex" key={index}>
-                                    <h2 className="flex justify-center items-center">
+                                <div className="flex w-full" key={index}>
+                                    <h2 className="flex items-center justify-center">
                                         {element}
                                     </h2>
-                                    <span className="w-full mb-2 h-5 md:my-auto border-b-[1px] border-b-storm"></span>
+                                    <span className="mb-2 h-5 w-full border-b-[1px] border-b-storm md:my-auto"></span>
                                 </div>
                             )
                         )}
-                        <h2 className=" md:text-lg">Aprendiendo: React Native</h2>
+                        <h2 className=" md:text-lg">
+                            Aprendiendo: React Native
+                        </h2>
                     </div>
                 </div>
-                <div className="w-full lg:ps-20 md:ps-10">
-                    <h1 className="text-5xl md:text-7xl tracking-heading">
+                <div className="w-full md:ps-10 lg:ps-20">
+                    <h1 className="text-5xl tracking-heading md:text-7xl">
                         BACK-
                         <br />
                         END
                     </h1>
-                    <div className="md:text-3xl w-full space-y-5 md:space-y-10">
-                        {["Laravel", "PHP", "MySQL", "..."].map(
+                    <div className="w-full space-y-5 md:space-y-10 md:text-3xl">
+                        {['Laravel', 'PHP', 'MySQL', '...'].map(
                             (element, index) => (
-                                <div className="w-full flex" key={index}>
-                                    <h2 className="flex justify-center items-center">
+                                <div className="flex w-full" key={index}>
+                                    <h2 className="flex items-center justify-center">
                                         {element}
                                     </h2>
-                                    <span className="w-full h-5 mb-2 md:my-auto border-b-[1px] border-b-storm"></span>
+                                    <span className="mb-2 h-5 w-full border-b-[1px] border-b-storm md:my-auto"></span>
                                 </div>
                             )
                         )}
@@ -131,17 +136,17 @@ export default function Home() {
             </section>
 
             <section
-                className={`transition-all duration-300 px-4 md:px-6 xl:px-0 ${
+                className={`px-4 transition-all duration-300 md:px-6 xl:px-0 ${
                     isWorksVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 -translate-y-3"
+                        ? 'translate-y-0 opacity-100'
+                        : '-translate-y-3 opacity-0'
                 }`}
             >
-                <h1 className="tracking-[1rem] text-5xl md:text-7xl md:text-center mb-10 md:mb-20 mt-20 md:mt-28">
+                <h1 className="mb-10 mt-20 text-5xl tracking-[1rem] md:mb-20 md:mt-28 md:text-center md:text-7xl">
                     PROYEC&shy;TOS
                 </h1>
 
-                <div className="w-full md:mb-48 mb-20" ref={worksRef}>
+                <div className="mb-20 w-full md:mb-48" ref={worksRef}>
                     <LatestWorks />
                 </div>
             </section>

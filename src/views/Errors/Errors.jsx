@@ -1,19 +1,19 @@
-import { useRouteError } from "react-router-dom";
+import { useRouteError } from 'react-router-dom';
 
 export default function Errors() {
     const error = useRouteError();
     console.error(error);
 
     return (
-        <div className="h-screen flex justify-center flex-col items-center space-y-5">
-            <h1 className="font-bold text-2xl">Oops...</h1>
+        <div className="flex h-screen flex-col items-center justify-center space-y-5">
+            <h1 className="text-2xl font-bold">Oops...</h1>
 
             <p>Ocurrió algo inesperado</p>
-            <p className="text-gray-400 italic">{ error.statusText || error.message }</p>
+            <p className="italic text-gray-400">
+                {error.statusText || error.message}
+            </p>
 
-            <div className="">
-                
-            </div>
+            <div className=""></div>
         </div>
     );
 }

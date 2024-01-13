@@ -1,21 +1,21 @@
-import MAIN_WORKS from '../data/main_works.json'
+import MAIN_WORKS from '../data/main_works.json';
 import { Link } from 'react-router-dom';
 
 export default function LatestWorks() {
     return (
-        <div className="flex flex-col md:grid grid-cols-3 gap-2 w-full max-w-7xl mx-auto ">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-2 md:grid md:grid-cols-3 ">
             {MAIN_WORKS.map((element, index) => (
                 <Link
                     to={`/work/${element.id}`}
                     key={index}
                     className={`w-full ${
-                        index === 0 || index === 3 ? "col-span-2" : ""
+                        index === 0 || index === 3 ? 'md:col-span-2' : ''
                     }`}
                 >
                     <article
-                        className={`md:h-80 relative flex flex-col justify-between text-white p-5 w-full border-transparent hover:border-white border-4  transition-all duration-300 rounded-lg bg-gray-900   `}
+                        className={`relative flex w-full flex-col justify-between rounded-lg border-4 border-transparent bg-gray-900 p-5 text-white  transition-all duration-300 hover:border-white md:h-80   `}
                     >
-                        <header className="my-5 md:my-auto md:w-28 w-14 brightness-0 invert-[1]">
+                        <header className="my-5 w-14 brightness-0 invert-[1] md:my-auto md:w-28">
                             <img
                                 src={element?.image}
                                 loading="lazy"
@@ -24,17 +24,17 @@ export default function LatestWorks() {
                         </header>
 
                         <div>
-                            <div className="w-full flex items-end">
+                            <div className="flex w-full items-end">
                                 <span className=" text-2xl ">
                                     {element.name}
                                 </span>
-                                <span className="w-full h-[1px] bg-white mb-2"></span>
+                                <span className="mb-2 h-[1px] w-full bg-white"></span>
                             </div>
                             <p className="w-full max-w-[60ch] text-sm md:line-clamp-2">
                                 {element.short_description}
                             </p>
-                            <div className="space-x-2 mt-4 text-sm md:line-clamp-1">
-                                {element.technologies.join(" - ")}
+                            <div className="mt-4 space-x-2 text-sm md:line-clamp-1">
+                                {element.technologies.join(' - ')}
                             </div>
                         </div>
                     </article>

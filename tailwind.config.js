@@ -16,14 +16,6 @@ export default {
         "turq": "#0F3740",
         "storm": "#B6C6CD"
       },
-      animation: {
-        'gradient': 'gradient 8s linear infinite',
-      },
-      keyframes: {
-        'gradient': {
-          to: { 'background-position': '200% center' },
-        }
-      },
       height:{
         'line' : '1px',
       },

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 /**
  * Retorna un valor booleano que indica si el scroll está en el tope
@@ -18,9 +18,9 @@ export default function useOnTop() {
      * Agrega event listener al montar el componente
      */
     useEffect(() => {
-        window.addEventListener("scroll", listenScrollEvent);
+        window.addEventListener('scroll', listenScrollEvent);
         return () => {
-            window.removeEventListener("scroll", listenScrollEvent);
+            window.removeEventListener('scroll', listenScrollEvent);
         };
     }, []);
 

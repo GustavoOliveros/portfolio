@@ -1,14 +1,12 @@
 export default function CustomErrors({ customError }) {
     return (
-        <div className=" my-28 flex justify-center flex-col items-center space-y-5">
-            <h1 className="font-bold text-2xl">Oops...</h1>
+        <div className=" my-28 flex flex-col items-center justify-center space-y-5">
+            <h1 className="text-2xl font-bold">Oops...</h1>
 
             <p>Ocurrió algo inesperado</p>
-            <p className="text-gray-400 italic">{ customError }</p>
+            <p className="italic text-gray-400">{customError}</p>
 
-            <div className="">
-                
-            </div>
+            <div className=""></div>
         </div>
     );
 }

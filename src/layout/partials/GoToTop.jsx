@@ -1,19 +1,19 @@
-import useOnTop from "../../hooks/useOnTop";
+import useOnTop from '../../hooks/useOnTop';
 
 export default function GoToTop() {
     const isOnTop = useOnTop();
 
     return (
         <a
-            className={`rounded-full w-12 h-12 bg-storm hover:bg-white fixed bottom-4 md:bottom-10 flex justify-center items-center right-4 md:right-10 transition-all duration-200 ${
-                isOnTop ? "opacity-0 cursor-default" : null
+            className={`fixed bottom-4 right-4 flex h-12 w-12 items-center justify-center rounded-full bg-storm transition-all duration-200 hover:bg-white md:bottom-10 md:right-10 ${
+                isOnTop ? 'cursor-default opacity-0' : null
             } `}
             href="#"
             title="Ir al comienzo de la página"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-8 h-8"
+                className="h-8 w-8"
                 viewBox="0 0 384 512"
                 fill="#130F40"
             >

@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom";
-import MAIN_WORKS from "../../data/main_works.json";
-import CustomErrors from "../Errors/CustomErrors";
+import { useParams } from 'react-router-dom';
+import MAIN_WORKS from '../../data/main_works.json';
+import CustomErrors from '../Errors/CustomErrors';
 
 export default function Work({}) {
     const { workId } = useParams();
