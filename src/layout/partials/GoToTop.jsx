@@ -3,6 +3,8 @@ import useOnTop from '../../hooks/useOnTop';
 export default function GoToTop() {
     const isOnTop = useOnTop();
 
+    // FIXME: Arreglar bug cuando se está fuera del inicio (mudar a estilo <GoToBottom />)
+
     return (
         <a
             className={`fixed bottom-4 right-4 flex h-12 w-12 items-center justify-center rounded-full bg-storm transition-all duration-200 hover:bg-white md:bottom-10 md:right-10 ${

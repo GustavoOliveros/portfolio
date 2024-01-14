@@ -10,9 +10,13 @@ export default function Home() {
     const isTechVisible = useIsFirstVisible(techRef);
     const isWorksVisible = useIsFirstVisible(worksRef);
 
+    // FIXME: Cambiar los span por hr
+
     return (
         <>
+            {/* Portada */}
             <section className="flex h-screen flex-col items-center">
+                {/* Datos */}
                 <div className="fadeIn-1 mt-16 flex w-full pt-4 text-5xl tracking-[.5rem] md:mb-1 md:mt-10 md:text-7xl md:tracking-heading">
                     <span className="my-auto h-line w-full bg-storm" />
                     <h1 className="ps-2 md:ps-4">GUSTAVO</h1>
@@ -34,6 +38,7 @@ export default function Home() {
                     del Comahue en Neuquén, Argentina.
                 </p>
 
+                {/* Link a Redes */}
                 <ul className="fadeIn-3 mt-10 flex justify-center gap-5">
                     <li>
                         <a href="#" title="Github">
@@ -76,9 +81,11 @@ export default function Home() {
                     </li>
                 </ul>
 
+                {/* Botón para ir a #tech */}
                 <GoToBottom toRef={titleTechRef} />
             </section>
 
+            {/* Tecnologías conocidas */}
             <section
                 className={`mx-auto w-full max-w-7xl scroll-mt-20 grid-cols-2 px-4 transition-all duration-300 md:mb-40 md:grid md:scroll-mt-40 md:px-6 xl:px-0 ${
                     isTechVisible
@@ -87,6 +94,7 @@ export default function Home() {
                 }`}
                 ref={titleTechRef}
             >
+                {/* FRONT */}
                 <div className="w-full pb-20 md:border-e md:border-storm md:pb-0 md:pe-20">
                     <h1 className="text-5xl tracking-heading md:text-7xl">
                         FRONT-
@@ -113,6 +121,8 @@ export default function Home() {
                         </h2>
                     </div>
                 </div>
+
+                {/* BACK */}
                 <div className="w-full md:ps-10 lg:ps-20">
                     <h1 className="text-5xl tracking-heading md:text-7xl">
                         BACK-
@@ -135,6 +145,7 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Proyectos destacados */}
             <section
                 className={`px-4 transition-all duration-300 md:px-6 xl:px-0 ${
                     isWorksVisible
