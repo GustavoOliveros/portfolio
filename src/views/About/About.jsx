@@ -3,8 +3,8 @@ import QUALIFICATIONS from '../../data/qualifications.json';
 export default function About() {
     return (
         <>
-            <section className="fadeIn-0 mx-auto mt-6 max-w-7xl px-4 md:px-6 xl:px-0">
-                <div className="flex flex-col-reverse md:grid md:grid-cols-2">
+            <section className="fadeIn-0 mx-auto my-10 max-w-7xl px-4 md:px-6 xl:px-0">
+                <div className="flex flex-col-reverse gap-10 md:grid md:grid-cols-2">
                     <div className="space-y-4 text-sm leading-6 md:text-lg md:leading-8">
                         <h1 className="text-5xl font-bold tracking-[0.5rem] md:text-7xl">
                             SOBRE MI
@@ -28,17 +28,23 @@ export default function About() {
                             últimas tendencias que reinventan constantemente el
                             panorama del desarrollo web.
                         </p>
-                        <img src="#/img/GUSTAVO_OLIVEROS.png" alt="asdfasd" />
                     </div>
+                    <div
+                        className="rounded-xl bg-gray-800 bg-cover aspect-video md:aspect-auto"
+                        style={{
+                            backgroundImage:
+                                'url(https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg)'
+                        }}
+                    />
                 </div>
             </section>
 
-            <section className="fadeIn-0 mx-auto max-w-7xl px-4 my-20 md:px-6 xl:px-0">
+            <section className="fadeIn-0 mx-auto my-20 max-w-7xl px-4 md:px-6 xl:px-0">
                 <div className="space-y-4 text-sm leading-6 md:text-lg md:leading-9">
-                    <h1 className="text-5xl text-center font-bold tracking-[0.5rem] md:text-7xl">
-                        ESTUDIOS
+                    <h1 className="text-center text-5xl font-bold tracking-[0.5rem] md:text-7xl">
+                        ESTU&shy;DIOS
                     </h1>
-                    <ol class="relative max-w-[60ch] mx-auto border-s border-summer dark:border-summer">
+                    <ol class="relative mx-auto max-w-[60ch] border-s border-summer dark:border-summer">
                         {QUALIFICATIONS.map((item, index) => (
                             <li key={index} class="mb-10 ms-4">
                                 <div class="absolute -start-1.5 mt-3 h-3 w-3 rounded-full border border-summer bg-summer"></div>
@@ -54,6 +60,53 @@ export default function About() {
                             </li>
                         ))}
                     </ol>
+                </div>
+            </section>
+
+            <section className="fadeIn-0 mx-auto my-20 max-w-7xl px-4 md:px-6 xl:px-0">
+                <div className="space-y-4 text-sm leading-6 md:text-lg md:leading-9">
+                    <h1 className="text-center text-5xl font-bold tracking-[0.5rem] md:text-7xl">
+                        INTERE&shy;SES
+                    </h1>
+                    <ul class="mx-auto flex max-w-[60ch] flex-wrap justify-center">
+                        {[
+                            'Aprendizaje',
+                            'Entretenimiento',
+                            'Proyectos',
+                            'Idiomas',
+                            'Planificación',
+                            'Diseño',
+                            'APIs',
+                            'Datos'
+                        ].map((item) => (
+                            <li
+                                key={item}
+                                className="rounded-full border border-white px-4 py-2"
+                            >
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+
+            <section className="fadeIn-0 mx-auto my-20 max-w-7xl px-4 md:px-6 xl:px-0">
+                <div className="space-y-4 text-sm leading-6 md:text-lg md:leading-9">
+                    <h1 className="text-center text-5xl font-bold tracking-[0.5rem] md:text-7xl">
+                        CUALIDA&shy;DES
+                    </h1>
+                    <ul class="mx-auto flex max-w-[60ch] flex-wrap justify-center">
+                        {['Creatividad', 'Disposición', 'Respeto'].map(
+                            (item) => (
+                                <li
+                                    key={item}
+                                    className="rounded-full border border-white px-4 py-2"
+                                >
+                                    {item}
+                                </li>
+                            )
+                        )}
+                    </ul>
                 </div>
             </section>
         </>

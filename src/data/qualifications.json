@@ -1,13 +1,12 @@
-
-    [
-        {
-            "name": "Tecnicatura Universitaria en Desarrollo Web",
-            "description": "Durante dos años y medio, estudié desde lógica y buenas prácticas, pasando por diseño UI/UX, calidad de software,construcción de proyectos vanilla y terminando con Frameworks, entre muchas otras cosas.",
-            "period": "Ago. 2021 - Dic. 2023"
-        },
-        {
-            "name": "B2",
-            "description": "easfasdfasd",
-            "period": "Dic. 2023"
-        }
-    ]
+[
+    {
+        "name": "Tecnicatura Universitaria en Desarrollo Web - Universidad Nacional del Comahue",
+        "description": "Durante dos años y medio, estudié desde lógica y buenas prácticas, pasando por diseño UI/UX, calidad de software,construcción de proyectos vanilla y terminando con Frameworks, entre muchas otras cosas.",
+        "period": "Ago. 2021 - Dic. 2023"
+    },
+    {
+        "name": "B2 First - Cambridge Assessment English",
+        "description": "Me preparé y rendí el examen B2 First de la Universidad de Cambridge. Actualmente, estoy en espera de resultado.",
+        "period": "Dic. 2023"
+    }
+]

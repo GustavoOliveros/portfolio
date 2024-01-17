@@ -29,7 +29,7 @@
         color: theme('colors.storm');
     }
 
-    li svg:hover {
+    section li svg:hover {
         fill: white;
     }
 

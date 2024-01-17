@@ -10,8 +10,6 @@ export default function Home() {
     const isTechVisible = useIsFirstVisible(techRef);
     const isWorksVisible = useIsFirstVisible(worksRef);
 
-    // FIXME: Cambiar los span por hr
-
     return (
         <>
             {/* Portada */}
@@ -41,7 +39,7 @@ export default function Home() {
                 {/* Link a Redes */}
                 <ul className="fadeIn-3 mt-10 flex justify-center gap-5">
                     <li>
-                        <a href="#" title="Github">
+                        <a href="https://github.com/GustavoOliveros/" title="Github" target='_blank'>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-7 w-7"
@@ -54,7 +52,7 @@ export default function Home() {
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Linkedin">
+                        <a href="https://www.linkedin.com/in/gustavo-oliveros-4a79b62aa/" title="Linkedin" target='_blank'>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 448 512"
@@ -67,7 +65,7 @@ export default function Home() {
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Correo electrónico">
+                        <a href="mailto:oliverosg2909@gmail.com" title="Correo electrónico" target="_blank">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-7 w-7"

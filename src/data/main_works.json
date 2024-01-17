@@ -5,7 +5,8 @@
         "short_description": "Aplicación web que combina el catálogo de los principales servicios de streaming en Argentina.",
         "description": "",
         "technologies": ["React", "Laravel", "InertiaJS", "MySQL", "Tailwind"],
-        "image": "https://github.com/GustavoOliveros/kite-app/blob/origin/public/img/logo.png?raw=true"
+        "image": "https://github.com/GustavoOliveros/kite-app/blob/origin/public/img/logo.png?raw=true",
+        "github_link": "https://github.com/GustavoOliveros/kite-app"
     },
     {
         "id": "neupoom",
@@ -13,7 +14,8 @@
         "short_description": "Gestión de competencias Taekwondo para la federación neuquina.",
         "description": "",
         "technologies": ["Laravel", "MySQL", "Bootstrap"],
-        "image": "https://github.com/MarCoass/TPO-PWA/blob/main/TP-Laravel/public/images/World_Taekwondo2.png?raw=true"
+        "image": "https://github.com/MarCoass/TPO-PWA/blob/main/TP-Laravel/public/images/World_Taekwondo2.png?raw=true",
+        "github_link": "https://github.com/MarCoass/TPO-PWA/tree/main/TP-Laravel"
     },
     {
         "id": "slash",
@@ -21,7 +23,8 @@
         "short_description": "E-commerce sobre artículos Gaming.",
         "description": "",
         "technologies": ["PHP Vanilla", "MySQL", "Bootstrap"],
-        "image": "https://github.com/GustavoOliveros/Slash-14/blob/main/Vista/img/LOGO.png?raw=true"
+        "image": "https://github.com/GustavoOliveros/Slash-14/blob/main/Vista/img/LOGO.png?raw=true",
+        "github_link": "https://github.com/GustavoOliveros/Slash-14"
     },
     {
         "id": "cineguess",
@@ -29,6 +32,7 @@
         "description": "",
         "short_description": "Quiz sobre películas para Android.",
         "technologies": ["React Native", "Tailwind (twrnc)"],
-        "image": "/portfolio/GUSTAVO_OLIVEROS.png"
+        "image": "https://github.com/GustavoOliveros/portfolio/blob/main/public/img/GUSTAVO_OLIVEROS.png?raw=true",
+        "github_link": "https://github.com/GustavoOliveros/CineGuess"
     }
 ]
