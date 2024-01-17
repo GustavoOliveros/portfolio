@@ -28,7 +28,7 @@ export default function LatestWorks() {
                                 <span className=" text-2xl ">
                                     {element.name}
                                 </span>
-                                <span className="mb-2 h-[1px] w-full bg-white"></span>
+                                <hr className="mb-2 w-full bg-white"></hr>
                             </div>
                             <p className="w-full max-w-[60ch] text-sm md:line-clamp-2">
                                 {element.short_description}

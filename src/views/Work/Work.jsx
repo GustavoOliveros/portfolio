@@ -51,9 +51,9 @@ export default function Work({}) {
             <div className="mx-auto flex max-w-5xl flex-col-reverse gap-10 px-4 md:px-6 lg:grid lg:grid-cols-3 xl:px-0">
                 {/* Descripción detallada */}
                 <div className="col-span-2">
-                    <div className="mx-auto leading-6 lg:mt-10">
-                        <div className="mb-10 space-y-4 md:text-xl ">
-                            <p className="text-sm md:text-lg md:leading-9">
+                    <div className="mx-auto lg:mt-10">
+                        <div className="mb-10 space-y-4 text-sm leading-6 md:text-lg md:leading-9">
+                            <p>
                                 Como desarrollador de la Plataforma de Gestión
                                 de Competencias Taekwondo para la Federación
                                 Neuquina, estoy emocionado de presentar una
@@ -64,7 +64,7 @@ export default function Work({}) {
                                 plataforma que simplificará el proceso de
                                 inscripción, permitirá una gestión detallada.
                             </p>
-                            <p className="text-sm md:text-lg md:leading-9">
+                            <p>
                                 Esta plataforma no solo representa una
                                 herramienta tecnológica avanzada, sino también
                                 un paso adelante en la promoción y desarrollo

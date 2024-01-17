@@ -18,14 +18,14 @@ export default function Home() {
             <section className="flex h-screen flex-col items-center">
                 {/* Datos */}
                 <div className="fadeIn-1 mt-16 flex w-full pt-4 text-5xl tracking-[.5rem] md:mb-1 md:mt-10 md:text-7xl md:tracking-heading">
-                    <span className="my-auto h-line w-full bg-storm" />
+                    <hr className="my-auto w-full bg-storm" />
                     <h1 className="ps-2 md:ps-4">GUSTAVO</h1>
-                    <span className="my-auto h-line w-full bg-storm" />
+                    <hr className="my-auto w-full bg-storm" />
                 </div>
                 <div className="fadeIn-1 flex w-full pt-4 text-5xl tracking-[.5rem] md:mb-1 md:text-7xl md:tracking-heading">
-                    <span className="my-auto h-line w-full bg-storm" />
+                    <hr className="my-auto w-full bg-storm" />
                     <h1 className="ps-2 md:ps-4">OLIVEROS</h1>
-                    <span className="my-auto h-line w-full bg-storm" />
+                    <hr className="my-auto w-full bg-storm" />
                 </div>
 
                 <h2 className="fadeIn-2 px-3 pb-5 text-center text-sm lg:text-xl">
