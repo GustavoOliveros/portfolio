@@ -1,6 +1,15 @@
 import QUALIFICATIONS from '../../data/qualifications.json';
+import { useIsFirstVisible } from '../../hooks/useIsFirstVisible';
+import { useRef } from 'react';
 
 export default function About() {
+    const qualificationsRef = useRef();
+    const interestsRef = useRef();
+    const skillsRef = useRef();
+    const isQualificationsVisible = useIsFirstVisible(qualificationsRef);
+    const isInterestsVisible = useIsFirstVisible(interestsRef);
+    const isSkillsVisible = useIsFirstVisible(skillsRef);
+
     return (
         <>
             <section className="fadeIn-0 mx-auto my-10 max-w-7xl px-4 md:px-6 xl:px-0">
@@ -30,7 +39,7 @@ export default function About() {
                         </p>
                     </div>
                     <div
-                        className="rounded-xl bg-gray-800 bg-cover aspect-video md:aspect-auto"
+                        className="aspect-video rounded-xl bg-gray-800 bg-cover md:aspect-auto"
                         style={{
                             backgroundImage:
                                 'url(https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg)'
@@ -39,7 +48,14 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="fadeIn-0 mx-auto my-20 max-w-7xl px-4 md:px-6 xl:px-0">
+            <section
+                ref={qualificationsRef}
+                className={`mx-auto my-20 max-w-7xl px-4 transition-all duration-300 md:px-6 xl:px-0 ${
+                    isQualificationsVisible
+                        ? 'translate-y-0 opacity-100'
+                        : '-translate-y-3 opacity-0'
+                }`}
+            >
                 <div className="space-y-4 text-sm leading-6 md:text-lg md:leading-9">
                     <h1 className="text-center text-5xl font-bold tracking-[0.5rem] md:text-7xl">
                         ESTU&shy;DIOS
@@ -63,7 +79,14 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="fadeIn-0 mx-auto my-20 max-w-7xl px-4 md:px-6 xl:px-0">
+            <section
+                ref={interestsRef}
+                className={`mx-auto my-20 max-w-7xl px-4 transition-all duration-300 md:px-6 xl:px-0 ${
+                    isInterestsVisible
+                        ? 'translate-y-0 opacity-100'
+                        : '-translate-y-3 opacity-0'
+                }`}
+            >
                 <div className="space-y-4 text-sm leading-6 md:text-lg md:leading-9">
                     <h1 className="text-center text-5xl font-bold tracking-[0.5rem] md:text-7xl">
                         INTERE&shy;SES
@@ -90,7 +113,14 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="fadeIn-0 mx-auto my-20 max-w-7xl px-4 md:px-6 xl:px-0">
+            <section
+                ref={skillsRef}
+                className={`mx-auto my-20 max-w-7xl px-4 transition-all duration-300 md:px-6 xl:px-0 ${
+                    isSkillsVisible
+                        ? 'translate-y-0 opacity-100'
+                        : '-translate-y-3 opacity-0'
+                }`}
+            >
                 <div className="space-y-4 text-sm leading-6 md:text-lg md:leading-9">
                     <h1 className="text-center text-5xl font-bold tracking-[0.5rem] md:text-7xl">
                         CUALIDA&shy;DES
