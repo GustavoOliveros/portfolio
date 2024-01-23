@@ -14,7 +14,7 @@ export default function About() {
         <>
             <section className="fadeIn-0 mx-auto my-10 max-w-7xl px-4 md:px-6 xl:px-0">
                 <div className="flex flex-col-reverse gap-10 md:grid md:grid-cols-2">
-                    <div className="space-y-4 text-sm leading-6 md:text-lg md:leading-8">
+                    <div className="space-y-4 text-base leading-6 md:text-lg md:leading-8">
                         <h1 className="text-5xl font-bold tracking-[0.5rem] md:text-7xl">
                             SOBRE MI
                         </h1>
