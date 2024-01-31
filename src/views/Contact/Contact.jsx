@@ -11,7 +11,7 @@ export default function Contact() {
                 <h1 className="text-center my-10 text-5xl font-bold tracking-[0.5rem] md:text-7xl">
                     CONTAC&shy;TO
                 </h1>
-                <ul class="mx-auto lg:grid lg:grid-cols-3 lg:space-y-5 lg:gap-5 justify-center">
+                <ul className="mx-auto lg:grid lg:grid-cols-3 space-y-5 lg:space-y-0 lg:gap-5 justify-center">
                     {REDES.map((item, index) => (
                         <li
                             key={index}
